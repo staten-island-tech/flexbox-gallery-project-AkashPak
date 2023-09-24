@@ -8,7 +8,7 @@ font-family: 'Raleway', sans-serif;
 .body {
     font-size: 10px;
     box-sizing: border-box;
-    margin-left: 0;
+    margin-left: 0px;
     padding: 0;}
 
     .card-img {
@@ -34,6 +34,7 @@ font-family: 'Raleway', sans-serif;
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     
 }
@@ -48,5 +49,8 @@ font-family: 'Raleway', sans-serif;
     font-size: 6rem;
     color: dimgray;
 }
-
+.flex-container2{
+    display:flex;
+    justify-content: space-between;
+}
 
