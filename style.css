@@ -27,6 +27,7 @@ font-family: 'Raleway', sans-serif;
     margin: 3px 3px 3px;
     margin-bottom: 40px;
     box-shadow: 5px 7px skyblue;
+    transition: 1s;
     font-family: 'Croissant One', cursive;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -60,7 +61,59 @@ font-family: 'Raleway', sans-serif;
 body{
     background-color: aqua;
 }
-
-.card-3:hover{
-    background-color:deepskyblue
+#card-1:hover{
+    transform: scale(1.25);
+    background-color: thistle;
 }
+
+#card-2:hover{
+   transform: skew(14deg);
+}
+
+
+@keyframes pulse{
+    from{transform: scale(1.25);}
+    to{transform: scale(2);}
+}
+#card-3:hover{
+    animation-name: pulse;
+    animation-duration: 4s ;
+}
+
+@keyframes change{
+    from{background-color: black;}
+    to {background-color: rgb(red, green, blue);}
+}
+
+#card-4:hover{
+    animation-name: change;
+    animation-duration: 5s;
+}
+
+@keyframes spin{
+    from {transform: rotateY('180');}
+    to {transform: rotateX('180');}
+}
+#card-5:hover{
+    animation-name: spin;
+    animation-duration: 1s;
+   
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(-8deg); }
+    10% { transform: translate(-1px, -2px) rotate(8deg); }
+    20% { transform: translate(-3px, 0px) rotate(-8deg); }
+    30% { transform: translate(3px, 2px) rotate(8deg); }
+    40% { transform: translate(1px, -1px) rotate(-8deg); }
+    50% { transform: translate(-1px, 2px) rotate(8deg); }
+    60% { transform: translate(-3px, 1px) rotate(-8deg); }
+    70% { transform: translate(3px, 1px) rotate(8deg); }
+    80% { transform: translate(-3px, -3px) rotate(-8deg); }
+    90% { transform: translate(2px, 2px) rotate(8deg); }
+    100% { transform: translate(1px, -2px) rotate(-8deg); }
+  }
+#card-6:hover{
+    animation: shake;
+    animation-duration: 1s;
+}
+
