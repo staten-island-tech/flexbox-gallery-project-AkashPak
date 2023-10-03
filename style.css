@@ -100,7 +100,7 @@ body{
    
 }
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(-8deg); }
+    0%  { transform: translate(1px, 1px) rotate(-8deg); }
     10% { transform: translate(-1px, -2px) rotate(8deg); }
     20% { transform: translate(-3px, 0px) rotate(-8deg); }
     30% { transform: translate(3px, 2px) rotate(8deg); }
@@ -116,4 +116,9 @@ body{
     animation: shake;
     animation-duration: 1s;
 }
-
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: red;
+    }
+  }
+   
