@@ -97,9 +97,9 @@ body{
 #card-5:hover{
     animation-name:spin;
     animation-duration: 3s;
-   
-}
-@keyframes shake {
+   }
+
+   @keyframes shake {
     0%  { transform: translate(1px, 1px) rotate(-8deg); }
     10% { transform: translate(-1px, -2px) rotate(8deg); }
     20% { transform: translate(-3px, 0px) rotate(-8deg); }
