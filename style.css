@@ -95,8 +95,8 @@ body{
     to {transform: rotateX('180');}
 }
 #card-5:hover{
-    animation-name: spin;
-    animation-duration: 1s;
+    animation-name:spin;
+    animation-duration: 3s;
    
 }
 @keyframes shake {
