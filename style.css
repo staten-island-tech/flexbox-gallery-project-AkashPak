@@ -41,8 +41,8 @@ font-family: 'Raleway', sans-serif;
 .flex-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly
+   flex-wrap: wrap;
+   
 
 }
 
@@ -116,9 +116,14 @@ body{
     animation: shake;
     animation-duration: 1s;
 }
-@media only screen and (max-width: 1000px) {
-    body {
-      background-color: red;
+
+@media all and (max-width:500px){
+    body{
+        background-color: azure;
     }
-  }
-   
+   .flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+}
