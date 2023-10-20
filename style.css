@@ -118,7 +118,9 @@ body{
 
 @media all and (max-width:500px){
     body{
-        background-color: azure;
+    background-color: azure;
+
+    
     }
    .flex-container{
     display: flex;
@@ -126,4 +128,8 @@ body{
     align-items: center;
     background-color: aquamarine;
    }
+   .card{
+    width: 80vw;
+   }
+
 }
